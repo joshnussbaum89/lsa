@@ -1,0 +1,67 @@
+/**
+  * Animate on scroll styles (inspired by AOS library -- https://michalsnik.github.io/lsa/)
+  * Required class: `lsa` (initializes animations and defaults to fade-in)
+  * Animation options: `lsa-slide-up`, `lsa-slide-down`, `lsa-slide-left`, `lsa-slide-right`, `lsa-slide-down-right`, `lsa-slide-down-left`, `lsa-slide-up-right` `lsa-slide-up-left`
+  * Usage: `<div class="lsa lsa-slide-up">...</div>`
+  * Note: Add `no-repeat` class to prevent animations from repeating on scroll
+  */
+
+/* Initialize & fade in element on scroll */
+.lsa {
+  opacity: 0;
+  transition: opacity 700ms, transform 700ms;
+}
+
+/* Slide up */
+.lsa.lsa-slide-up {
+  transform: translateY(4rem);
+}
+
+/* Slide down */
+.lsa.lsa-slide-down {
+  transform: translateY(-4rem);
+}
+
+/* Slide left */
+.lsa.lsa-slide-left {
+  transform: translateX(-4rem);
+}
+
+/* Slide right */
+.lsa.lsa-slide-right {
+  transform: translateX(4rem);
+}
+
+/* Slide down right */
+.lsa.lsa-slide-down-right {
+  transform: translate(-4rem, -4rem);
+}
+
+/* Slide down left */
+.lsa.lsa-slide-down-left {
+  transform: translate(4rem, -4rem);
+}
+
+/* Slide up right */
+.lsa.lsa-slide-up-right {
+  transform: translate(-4rem, 4rem);
+}
+
+/* Slide up left */
+.lsa.lsa-slide-up-left {
+  transform: translate(4rem, 4rem);
+}
+
+/* Handle active state */
+.lsa.active {
+  opacity: 1;
+  transform: none;
+}
+
+/* Accessibility: disable animations for users that prefer reduced motion */
+@media (prefers-reduced-motion) {
+  .lsa {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
