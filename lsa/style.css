@@ -9,6 +9,7 @@
 /* Initialize & fade in element on scroll */
 .lsa {
   opacity: 0;
+  visibility: hidden;
   transition: opacity 700ms, transform 700ms;
 }
 
@@ -24,12 +25,12 @@
 
 /* Slide left */
 .lsa.lsa-slide-left {
-  transform: translateX(-4rem);
+  transform: translateX(4rem);
 }
 
 /* Slide right */
 .lsa.lsa-slide-right {
-  transform: translateX(4rem);
+  transform: translateX(-4rem);
 }
 
 /* Slide down right */
@@ -55,6 +56,7 @@
 /* Handle active state */
 .lsa.active {
   opacity: 1;
+  visibility: visible;
   transform: none;
 }
 
