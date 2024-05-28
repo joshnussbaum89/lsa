@@ -22,8 +22,7 @@ function handleAnimations() {
       entries.forEach((entry) => {
         const section = entry.target
 
-        // By default, animations repeat on scroll
-        // If section has the class `no-repeat`, do not repeat animation
+        // By default, animations repeat on scroll unless the section has the class `no-repeat`
         if (entry.isIntersecting) {
           section.classList.add('active')
         } else if (!entry.isIntersecting && !section.classList.contains('no-repeat')) {

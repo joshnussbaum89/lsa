@@ -2,7 +2,7 @@
 
 Add subtle scrolling animations to your web projects with ease. Inspired by the infamous [AOS library](https://michalsnik.github.io/aos/).
 
-This version is a bit simpler. Just copy and paste the provided CSS and JavaScript files from the `/lsa` folder into your project, and you're ready to go.
+This version is a bit simpler and intentionally bare bones. Just copy and paste the provided CSS and JavaScript files from the `/lsa` folder into your project, and you're ready to go.
 
 Totally customizable, lightweight, and very much meant to be messed with 🛠️
 
