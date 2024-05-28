@@ -9,8 +9,20 @@
   --color-orange: #ff757e;
   --color-blue: #82aaff;
   --color-grey: #8794a1;
+
+  --font-size-sm: 1rem;
+  --font-size-md: 1.414rem;
+  --font-size-lg: 1.999rem;
+  --font-size-xl: 2.827rem;
+
   --section-spacing: 4rem;
-  --max-width: 800px;
+  --max-width-md: 800px;
+  --max-width-lg: 1440px;
+}
+
+html {
+  scrollbar-color: var(--color-white) var(--color-darkBlue);
+  scrollbar-width: thin;
 }
 
 body {
@@ -25,9 +37,10 @@ body {
 }
 
 main {
-  max-width: var(--max-width);
+  max-width: var(--max-width-md);
   margin: 0 auto var(--section-spacing);
   padding: 1rem;
+  overflow: hidden;
 }
 
 header {
@@ -45,11 +58,34 @@ footer {
   color: var(--color-white);
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: var(--font-size-lg);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+}
+
 svg {
   width: 100%;
   height: auto;
   max-width: 1.5rem;
   fill: var(--color-white);
+}
+
+p {
+  font-size: var(--font-size-sm);
 }
 
 a {
@@ -88,8 +124,8 @@ a:hover svg {
   background-color: var(--color-blue);
 }
 
-.footer-items {
-  max-width: var(--max-width);
+.flex {
+  max-width: var(--max-width-lg);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
